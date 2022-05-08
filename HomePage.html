@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Pharmacy Home Page</title>
+        <link rel="stylesheet" href="HomePage.css">
+    </head>
+   <body>
+       <center><header>Pharmacy</header></center>
+       <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Our Medicines
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Fever</a>
+              <a href="#">Muscle Pain</a>
+              <a href="#">Cold and Cough</a>
+            </div>
+          </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Health Care 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Baby Care</a>
+            <a href="#">Skin Care</a>
+            <a href="#">Home Care</a>
+            <a href="#">Personal Care</a>
+            <a href="#">Pet Care</a>
+          </div>
+        </div> 
+        <a href="LabTest.html" target="_blank">Lab Test</a>
+      </div> 
+      
+        <div class="w3-content w3-section" style="max-width:1515px;">
+          <img class="mySlides" src="ani1.jpg" style="width:100%">
+          <img class="mySlides" src="ani2.png" style="width:100%">
+          <img class="mySlides" src="ani3.jpg" style="width:100%">
+          <img class="mySlides" src="ani4.jpg" style="width:100%">
+          <img class="mySlides" src="ani5.jpg" style="width:100%">
+        </div>
+
+        <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000);
+          }
+          </script>
+
+          
+<h2>Covid Care</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3 style="color: black;">Covid Test Kit</h3>
+      <img src="c1.jpg" style="width:100%" class="i1">
+      <p>Rs.40</p>
+      <p>Offer:Rs.30/-</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3 style="color: black;">Covid Essentials</h3>
+      <img src="c2.jpg" style="width:100%" class="i1">
+      <p>Rs.240</p>
+      <p>Offer:Rs.170/-</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3 style="color: black;">Sanitizer Bottle</h3>
+      <img src="c3.jpg" style="width:100%" class="i1">
+      <p>Rs.99</p>
+      <p>Offer:Rs.87/-</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3 style="color: black;">Mask</h3>
+      <img src="c4.jpg" style="width:100%" class="i1">
+      <p>Rs.45</p>
+      <p>Offer:Rs.30/-</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+
+<h2>Diabetes Care</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3 style="color: black;">BGR-34</h3>
+      <img src="d1.jpg" style="width:100%" class="i1">
+      <p>Rs.40</p>
+      <p>Offer:Rs.30/-</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3 style="color: black;">Dabur Chyawanprakash</h3>
+      <img src="d2.jpg" style="width:100%" class="i1">
+      <p>Rs.40</p>
+      <p>Offer:Rs.30/-</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3 style="color: black;">Colgate</h3>
+      <img src="d3.jpg" style="width:100%" class="i1">
+      <p>Rs.40</p>
+      <p>Offer:Rs.30/-</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3 style="color: black;">Unibic Butter Cookies</h3>
+      <img src="d4.png" style="width:100%" class="i1">
+      <p>Rs.40</p>
+      <p>Offer:Rs.30/-</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+
+       <center><footer>@copyright. Only for demonstration purposes</footer></center>
+   </body>
+</html>

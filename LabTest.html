@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="LabTest.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Lab Test Registration</title>
+   </head>
+<body>
+  <div class="container">
+    <div class="title">1.Your Contact Details</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Patient ID</span>
+            <input type="text" placeholder="Patient ID if exists" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contact Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="title">2.Address</div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">House Number</span>
+            <input type="text" placeholder="Enter your House Number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Street</span>
+            <input type="text" placeholder="Enter your Street" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Area</span>
+            <input type="text" placeholder="Enter your Area" required>
+          </div>   
+          <div class="input-box">
+            <label for="ch">Select your District Name:</label><br>
+            <select name="dt" style="font-size: 15px; margin-top: 5px; padding:10px; padding-left: 70px;">
+              <option value="ch">Choose</option>
+              <option value="ch">Anantapur</option>
+              <option value="ch">Chittoor</option>
+              <option value="ch">East Godavari</option>
+              <option value="ch">Guntur</option>
+              <option value="ch">Kadapa</option>
+              <option value="ch">Krishna</option>
+              <option value="ch">Kurnool</option>
+              <option value="ch">Nellore</option>
+              <option value="ch">Prakasam</option>
+              <option value="ch">Srikakulam</option>
+              <option value="ch">Visakhapatnam</option>
+              <option value="ch">West Godavari</option>
+            </select>
+          </div>
+        </div>
+        <div class="title">3.Test Type</div>
+          <div class="input-box">
+        <input type="checkbox" id="cbc" name="cbc" value="cbc"/ required>  
+                 <label>CBC</label><br>
+        <input type="checkbox" id="CU" name="CU" value="CU"/ required>  
+                 <label>Complete Urine</label><br>
+        <input type="checkbox" id="LP" name="LP" value="LP"/ required>  
+                 <label>Lipid Profile</label><br>
+        <input type="checkbox" id="tsh" name="tsh" value="tsh"/ required>  
+                 <label>Thyroid Stimulating Hormone(TSH)</label><br>
+        <input type="checkbox" id="GT" name="GT" value="GT"/ required>  
+                 <label>Glucose Test</label>
+               
+        </div>
+                 <div class="title">4.Do you want a hard copy of the report also?</div>
+                 <div class="hardcopy-details">
+                  <input type="radio" name="hardcopy" id="dot-1">
+                  <input type="radio" name="hardcopy" id="dot-2">
+                  <div class="category">
+                    <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="hardcopy">Yes</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="hardcopy">No</span>
+                  </label>
+                  </div>
+                </div>
+
+                <div class="title">5.Select Your Comfortable Date and Time</div>
+                <div class="user-details">
+                <div class="input-box">
+                  <input type="date" class="input" required>
+               </div> 
+               </div>
+
+        <div class="button">
+          <input type="reset" value="Reset"  data-type="horizontal" data-mini="true">
+          <input type="submit" value="Submit"  data-type="horizontal" data-mini="true">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
